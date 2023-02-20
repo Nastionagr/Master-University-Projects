@@ -1,0 +1,37 @@
+There are some commands that have been used for outcome data cleaning:
+
+# delete unnecessary rows
+grep -vwf rows_to_delete prob_sat_results.txt > prob_sat_results.new
+
+# delete empty rows
+grep "\S" prob_sat_results.new > prob_sat_results
+
+rm prob_sat_results.new
+
+# delete all column names
+sed -i 's/c number of literals  ://g' prob_sat_results
+sed -i 's/c number of clauses   ://g' prob_sat_results
+sed -i 's/c max. clause length  ://g' prob_sat_results
+sed -i 's/c cb                  ://g' prob_sat_results
+sed -i 's/c eps                 ://g' prob_sat_results
+sed -i 's/c maxTries            ://g' prob_sat_results
+sed -i 's/c maxFlips            ://g' prob_sat_results
+sed -i 's/c numFlips                      ://g' prob_sat_results
+sed -i 's/c avg. flips\/variable           ://g' prob_sat_results
+sed -i 's/c avg. flips\/clause             ://g' prob_sat_results
+
+# combine everything to one row with ','
+paste -sd ',' prob_sat_results >> prob_sat_results.new
+
+# divide each entity to the separate row
+sed -i 's/c number of variables :/\n/g' prob_sat_results.new
+
+rm prob_sat_results
+
+# delete whitespaces
+cat prob_sat_results.new | tr -d "[:blank:]" >> prob_sat_results
+
+rm prob_sat_results.new
+
+# delete last sign ',' in each row
+sed -i 's/.$//' prob_sat_results
