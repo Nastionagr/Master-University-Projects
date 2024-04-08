@@ -62,12 +62,12 @@ In the next picture datamart model is shown:
 
 ## Visualization in Power BI
 All of the input data (views and tables) to the Power BI report are located at the [data](03/data) folder.
-- [airline_view](03/airline_view.csv) - contains an information about airline (its name, origin country, activeness status)
-- [airport_view](03/airport_view.csv) - contains an information about airport (its name and location)
-- [countries_by_area](03/countries_by_area.csv) - contains an information about land area of each country ([data source](https://www.downloadexcelfiles.com/wo_en/list-largest-countries-world#google_vignette&gsc.tab=0))
-- [country_view](03/country_view.csv) - contains a list of all countries and corresponding continents
-- [route_coordinates_view](03/route_coordinates_view.csv) - contains an information about route start & end destination locations + distance between them
-- [route_info_view](03/route_info_view.csv) - contains whole details about route (airline, start & end airports, flight distance, plane type, number of stops, etc.)
+- [airline_view](03/data/airline_view.csv) - contains an information about airline (its name, origin country, activeness status)
+- [airport_view](03/data/airport_view.csv) - contains an information about airport (its name and location)
+- [countries_by_area](03/data/countries_by_area.csv) - contains an information about land area of each country ([data source](https://www.downloadexcelfiles.com/wo_en/list-largest-countries-world#google_vignette&gsc.tab=0))
+- [country_view](03/data/country_view.csv) - contains a list of all countries and corresponding continents
+- [route_coordinates_view](03/data/route_coordinates_view.csv) - contains an information about route start & end destination locations + distance between them
+- [route_info_view](03/data/route_info_view.csv) - contains whole details about route (airline, start & end airports, flight distance, plane type, number of stops, etc.)
 
 Finally, Power BI report is located in the [visualization](03/visualization.pbix) file.
 ## Questions
