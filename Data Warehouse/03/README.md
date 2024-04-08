@@ -19,7 +19,7 @@ All of the input data (views and tables) to the Power BI report are located at t
 - [route_coordinates_view](route_coordinates_view.csv) - contains an information about route start & end destination locations + distance between them
 - [route_info_view](route_info_view.csv) - contains whole details about route (airline, start & end airports, flight distance, plane type, number of stops, etc.)
 
-Finally, Power BI report is located in the [visualization](visualization.pbix) file. And our video presentation is [here](video.mkv).
+Finally, Power BI report is located in the [visualization](visualization.pbix) file.
 
 ## Questions
 - **Between which airports occured the longest flight?**
