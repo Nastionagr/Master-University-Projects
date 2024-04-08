@@ -4,9 +4,7 @@
 
 # Homework 1 - Airports - Input data analysis, entity, conceptual and DB model designs
 
-Authors: Hrytsyna, Anastasiia Solomiia; Pilar, Michal
-
-Description: Text description of source data (detailed description of individual attributes including data types, business names and business data description), entity model of the target, DB model of stage and target.
+Text description of source data (detailed description of individual attributes including data types, business names and business data description), entity model of the target, DB model of stage and target.
 
 ## Table of contents
 
